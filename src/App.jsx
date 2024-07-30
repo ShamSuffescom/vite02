@@ -9,7 +9,8 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import ImageDownload from './Pages/ImageDownload';
-import useEffectEtc from './Pages/UseEffectEtc';
+// import UseEffectEtc from './Pages/UseEffectEtc'
+import UseEffectEtc from './Pages/UseEffectEtc';
 
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
 
@@ -45,7 +46,7 @@ function App() {
                       <Route path='/' element={<Home />} />
                       <Route path='/usestate' element={<UseStateEx />} />
                       <Route path='/image-download' element={<ImageDownload />} />
-                      <Route path='/useefect-usecallback-useref' element={<useEffectEtc />} />
+                      <Route path='/useefect-usecallback-useref' element={<UseEffectEtc />} />
                     </Routes>
                   </main>
                 </div>
