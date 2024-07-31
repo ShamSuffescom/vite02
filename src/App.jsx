@@ -2,15 +2,17 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Link  } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import './index.css'
 import './App.css'
 
-import UseStateEx from './Components/UseStateEx';
+// import UseStateEx from './Components/UseStateEx';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import UseStateEx from './Pages/UseStateEx'
 import Home from './Pages/Home';
 import ImageDownload from './Pages/ImageDownload';
-// import UseEffectEtc from './Pages/UseEffectEtc'
 import UseEffectEtc from './Pages/UseEffectEtc';
+import CustomHookCurrency from './Pages/CustomHookCurrency';
 
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
 
@@ -37,6 +39,7 @@ function App() {
                   <Nav.Link as={Link} to="/usestate">useState</Nav.Link>
                   <Nav.Link as={Link} to="/image-download">Image Download</Nav.Link>
                   <Nav.Link as={Link} to="/useefect-usecallback-useref">useEfect useCallback & useRef</Nav.Link>
+                  <Nav.Link as={Link} to="/custom-hook-currency">Custom Hook Currency</Nav.Link>
                 </div>
               </Col>
               <Col md={10}>
@@ -47,6 +50,7 @@ function App() {
                       <Route path='/usestate' element={<UseStateEx />} />
                       <Route path='/image-download' element={<ImageDownload />} />
                       <Route path='/useefect-usecallback-useref' element={<UseEffectEtc />} />
+                      <Route path='/custom-hook-currency' element={<CustomHookCurrency />} />
                     </Routes>
                   </main>
                 </div>
